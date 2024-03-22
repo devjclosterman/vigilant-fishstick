@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Planner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Meal Planner</h1>
+
+    <div id="preferences">
+        <h2>Choose Your Preferences</h2>
+        <label>
+            <input type="checkbox" id="vegetarianCheckbox">
+            Vegetarian
+        </label>
+        <!-- Add more checkboxes for other dietary preferences -->
+    </div>
+
+    <div id="requirements">
+        <h2>Set Your Nutritional Requirements</h2>
+        <label for="caloriesInput">Calories:</label>
+        <input type="number" id="caloriesInput" placeholder="Calories" required>
+        <!-- Add inputs for protein, carbs, fats, etc. -->
+    </div>
+
+    <button id="generateButton">Generate Meal Plan</button>
+
+    <div id="mealPlan">
+        <h2>Generated Meal Plan</h2>
+        <ul id="mealList"></ul>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
